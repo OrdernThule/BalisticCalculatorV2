@@ -149,8 +149,8 @@
 
         <ImageView
             android:id="@+id/imageAtmosphere"
+            android:layout_width="36dp"
             android:layout_height="36dp"
-            android:layout_weight="1"
             app:srcCompat="@drawable/atmosphere" />
 
         <Button
