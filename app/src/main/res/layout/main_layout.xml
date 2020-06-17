@@ -16,11 +16,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="15dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/distance1" />
+            android:id="@+id/imageDistance"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/distance" />
 
         <TextView
             android:id="@+id/textDistance"
@@ -48,11 +48,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageDegree"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/degree1" />
+            app:srcCompat="@drawable/degree" />
 
         <TextView
             android:id="@+id/textTargetElevation"
@@ -81,11 +81,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="36dp"
+            android:id="@+id/imageWindSpeed"
+            android:layout_width="30dp"
             android:layout_height="36dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/winds1" />
+            app:srcCompat="@drawable/winds" />
 
         <TextView
             android:id="@+id/textView3"
@@ -116,11 +116,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="36dp"
+            android:id="@+id/imageWindDirection"
+            android:layout_width="30dp"
             android:layout_height="36dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/windsdirection1" />
+            app:srcCompat="@drawable/windsdirection" />
 
         <TextView
             android:id="@+id/textWindDirection"
@@ -148,11 +148,10 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="10dp"
+            android:id="@+id/imageAtmosphere"
+            android:layout_width="36dp"
             android:layout_height="36dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/atmosphere1" />
+            app:srcCompat="@drawable/atmosphere" />
 
         <Button
             android:id="@+id/buttonAtmosphere"
@@ -170,11 +169,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="36dp"
+            android:id="@+id/imageRifle"
+            android:layout_width="30dp"
             android:layout_height="36dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/rifle1" />
+            app:srcCompat="@drawable/rifle" />
 
         <Button
             android:id="@+id/buttonRifle"
@@ -192,11 +191,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/imageScope"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/scope1" />
+            app:srcCompat="@drawable/scope" />
 
         <Button
             android:id="@+id/buttonScope"
@@ -214,11 +213,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/imageCartridge"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/bullettransform1" />
+            app:srcCompat="@drawable/bullettransform" />
 
         <Button
             android:id="@+id/buttonCartridge"
@@ -327,11 +326,11 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/imageAdditionalInfo"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/info1" />
+            app:srcCompat="@drawable/info" />
 
         <Button
             android:id="@+id/buttonAdditionalInfo"
