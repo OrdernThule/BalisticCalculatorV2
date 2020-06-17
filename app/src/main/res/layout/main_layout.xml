@@ -155,10 +155,10 @@
 
         <Button
             android:id="@+id/buttonAtmosphere"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button"
+            android:text="@string/atmosphere"
             tools:text="@string/atmosphere" />
     </LinearLayout>
 
@@ -180,7 +180,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button"
+            android:text="@string/rifle"
             tools:text="@string/rifle" />
     </LinearLayout>
 
@@ -202,7 +202,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button"
+            android:text="@string/scope"
             tools:text="@string/scope" />
     </LinearLayout>
 
@@ -224,7 +224,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button"
             tools:text="@string/cartridge" />
     </LinearLayout>
 
@@ -237,11 +236,10 @@
 
         <Button
             android:id="@+id/buttonCalculate"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/Green"
-            android:text="Button"
             tools:text="@string/calculate" />
     </LinearLayout>
 
@@ -259,7 +257,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:text="TextView"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
                 tools:text="@string/moa" />
@@ -269,7 +266,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="TextView"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
                 tools:text="@string/mrad" />
@@ -279,7 +275,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="TextView"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
                 tools:text="@string/inches" />
@@ -289,7 +284,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="TextView"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
                 tools:text="@string/clicks" />
@@ -304,7 +298,6 @@
                 android:id="@+id/textVert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
                 tools:text="@string/vert" />
@@ -319,7 +312,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="TextView"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
                 tools:text="@string/horiz" />
@@ -330,8 +322,7 @@
     <LinearLayout
         android:id="@+id/TenAdditionalInfo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
@@ -346,7 +337,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button"
+            android:text="@string/additional_information"
             tools:text="@string/additional_information" />
     </LinearLayout>
 
