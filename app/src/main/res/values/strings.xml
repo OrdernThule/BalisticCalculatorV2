@@ -5,11 +5,11 @@
     <string name="target_elevation_degrees">Target elevation, deg</string>
     <string name="wind_speed_mph">Wind speed, mph</string>
     <string name="wind_direction_degrees">Wind direction, degrees</string>
-    <string name="atmosphere">Atmosphere:</string>
+    <string name="atmosphere">set Atmosphere</string>
     <string name="imageDistance">TODO</string>
-    <string name="rifle">Rifle:</string>
+    <string name="rifle">set Rifle</string>
     <string name="shooting_atmosphere">Shooting Atmosphere</string>
-    <string name="cartridge">Cartridge:</string>
+    <string name="cartridge">set Cartridge</string>
     <string name="vert">Vert.</string>
     <string name="horiz">Horiz.</string>
     <string name="moa">MOA</string>
@@ -35,7 +35,7 @@
     <string name="flight_time_sec">Flight time, sec:</string>
     <string name="rifle_settings">Rifle Settings</string>
     <string name="name_of_selected_rifle">Name of selected rifle</string>
-    <string name="scope">Scope:</string>
+    <string name="scope">set Scope</string>
     <string name="grid">Grid:</string>
     <string name="cartridgeset">Cartridge</string>
     <string name="sighting_distance_yards">Sighting distance, yards</string>
