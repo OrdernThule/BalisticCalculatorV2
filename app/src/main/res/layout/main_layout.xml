@@ -72,9 +72,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center|start"
                         android:maxLines="1"
+                        android:text="@string/target_elevation_degrees"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="@string/target_elevation_degrees" />
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/editTextNumber2"
@@ -103,9 +103,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center|start"
                         android:maxLines="1"
+                        android:text="@string/wind_speed_mph"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="@string/wind_speed_mph" />
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/editTextWindSpeed"
@@ -165,9 +165,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_span="2"
+                        android:text="@string/atmosphere"
                         android:textSize="18sp"
-                        android:textStyle="italic"
-                        tools:text="@string/atmosphere" />
+                        android:textStyle="italic" />
 
                 </TableRow>
 
@@ -186,9 +186,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_span="2"
+                        android:text="@string/rifle"
                         android:textSize="18sp"
-                        android:textStyle="italic"
-                        tools:text="@string/rifle" />
+                        android:textStyle="italic" />
                 </TableRow>
 
                 <TableRow
@@ -206,9 +206,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_span="2"
+                        android:text="@string/scope"
                         android:textSize="18sp"
-                        android:textStyle="italic"
-                        tools:text="@string/scope" />
+                        android:textStyle="italic" />
                 </TableRow>
 
                 <TableRow
@@ -226,9 +226,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_span="2"
+                        android:text="@string/cartridge"
                         android:textSize="18sp"
-                        android:textStyle="italic"
-                        tools:text="@string/cartridge" />
+                        android:textStyle="italic" />
                 </TableRow>
 
             </TableLayout>
@@ -240,9 +240,9 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="#5FA832"
+                android:text="@string/calculate"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                tools:text="@string/calculate" />
+                android:textStyle="bold" />
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -257,10 +257,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="5dp"
+                        android:text="Result"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="italic"
-                        tools:text="Result" />
+                        android:textStyle="italic" />
 
                     <TextView
                         android:id="@+id/textMOA"
@@ -268,10 +268,10 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="@string/moa"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="@string/moa" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textMRAD"
@@ -279,10 +279,10 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="@string/mrad"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="@string/mrad" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textInches"
@@ -290,10 +290,10 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="@string/inches"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="@string/inches" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textClicks"
@@ -301,10 +301,10 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="@string/clicks"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="@string/clicks" />
+                        android:textStyle="bold" />
 
                 </TableRow>
 
@@ -317,10 +317,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="5dp"
+                        android:text="@string/vert"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="@string/vert" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textMOA2"
@@ -328,9 +328,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="0"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="0" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/textMRAD3"
@@ -338,9 +338,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="0"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="0" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/textInches2"
@@ -348,9 +348,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="0"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="0" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/textClicks2"
@@ -358,9 +358,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="0"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="0" />
+                        android:textSize="18sp" />
 
                 </TableRow>
 
@@ -373,10 +373,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="5dp"
+                        android:text="@string/horiz"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        tools:text="@string/horiz" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textMOA3"
@@ -386,7 +386,7 @@
                         android:padding="5dp"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        tools:text="0" />
+                        android:text="0" />
 
                     <TextView
                         android:id="@+id/textMRAD4"
@@ -394,9 +394,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="0"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="0" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/textInches3"
@@ -404,9 +404,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="0"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="0" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/textClicks3"
@@ -414,9 +414,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:text="0"
                         android:textColor="@android:color/background_dark"
-                        android:textSize="18sp"
-                        tools:text="0" />
+                        android:textSize="18sp" />
 
                 </TableRow>
 
@@ -438,8 +438,8 @@
                     android:id="@+id/buttonAdditionalInfo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    tools:text="@string/additional_information" />
+                    android:text="@string/additional_information"
+                    android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
