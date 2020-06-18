@@ -7,17 +7,54 @@
 
     <fragment
         android:id="@+id/main_layout"
-        android:name="com.example.balisticcalculatorv2.MainFragment"
+        android:name="com.example.balisticcalculatorv2."
         android:label="main_fragment"
-        tools:layout="@layout/main_layout" >
+        tools:layout="@layout/main_layout"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true"
+        >
         <action
             android:id="@+id/action_main_layout_to_atmosphereActivity"
             app:destination="@id/atmosphereActivity" />
+        <action
+            android:id="@+id/action_main_layout_to_additionalInfoActivity"
+            app:destination="@id/additionalInfoActivity" />
+        <action
+            android:id="@+id/action_main_layout_to_rifleActivity"
+            app:destination="@id/rifleActivity" />
+        <action
+            android:id="@+id/action_main_layout_to_scopeActivity"
+            app:destination="@id/scopeActivity" />
+        <action
+            android:id="@+id/action_main_layout_to_cartridgeActivity"
+            app:destination="@id/cartridgeActivity" />
     </fragment>
 
     <fragment
         android:id="@+id/atmosphereActivity"
         android:name="com.example.balisticcalculatorv2.atmosphereActivity"
         android:label="fragment_atmosphere_activity"
-        tools:layout="@layout/fragment_atmosphere_activity" />
+        tools:layout="@layout/atmosphere_activity"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true"/>
+    <fragment
+        android:id="@+id/additionalInfoActivity"
+        android:name="com.example.balisticcalculatorv2.additionalInfoActivity"
+        android:label="fragment_additional_info_activity"
+        tools:layout="@layout/additionalinfo_activity" />
+    <fragment
+        android:id="@+id/rifleActivity"
+        android:name="com.example.balisticcalculatorv2.rifleActivity"
+        android:label="fragment_rifle_activity"
+        tools:layout="@layout/rifle_activity" />
+    <fragment
+        android:id="@+id/scopeActivity"
+        android:name="com.example.balisticcalculatorv2.scopeActivity"
+        android:label="fragment_scope_activity"
+        tools:layout="@layout/scope_activity" />
+    <fragment
+        android:id="@+id/cartridgeActivity"
+        android:name="com.example.balisticcalculatorv2.CartridgeActivity"
+        android:label="fragment_cartridge_activity"
+        tools:layout="@layout/cartridge_activity" />
 </navigation>
