@@ -9,140 +9,142 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/FirstSightingDis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageDistance"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/distance" />
-
-        <TextView
-            android:id="@+id/textSightingDist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@android:color/background_dark"
-            android:textSize="15sp"
-            tools:text="@string/sighting_distance_yards" />
-
-        <EditText
-            android:id="@+id/editTextSightingDist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/standart"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/SecondSightHeight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageSightHeight"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/height" />
-
-        <TextView
-            android:id="@+id/textSightHeight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            tools:text="@string/sight_height_inches" />
-
-        <EditText
-            android:id="@+id/editTextSightHeight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/standart"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ThreeVertClick"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textVertClicks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            tools:text="@string/vert_click_moa" />
-
-        <EditText
-            android:id="@+id/editTextVertClicks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/standart"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/FourHorzClick"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textHorizClicks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            tools:text="@string/horiz_click_moa" />
-
-        <EditText
-            android:id="@+id/editTextHorizClicks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/standart"
-            android:inputType="number" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/FiveSpinnerUnit"
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:orientation="horizontal">
-
-        <Spinner
-            android:id="@+id/spinnerUnitRev"
-            android:layout_width="match_parent"
-            android:layout_height="48dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/SixSpinnerGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <Spinner
-            android:id="@+id/spinnerGridScope"
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp" />
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageDistance"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/distance" />
+
+                <TextView
+                    android:id="@+id/textSightingDist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sighting_distance_yards"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editTextSightingDist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/standart"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageSightHeight"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/height" />
+
+                <TextView
+                    android:id="@+id/textSightHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sight_height_inches"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextSightHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/standart"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textVertClicks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vert_click_moa"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextVertClicks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/standart"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textHorizClicks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/horiz_click_moa"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextHorizClicks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/standart"
+                    android:inputType="number" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/spinnerUnitRev"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spinnerGridScope"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" />
+            </TableRow>
+
+        </TableLayout>
     </LinearLayout>
+
 </LinearLayout>
