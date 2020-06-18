@@ -21,8 +21,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/name"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:inputType="textPersonName" />
 
         <Spinner
             android:id="@+id/spinnerName"
@@ -49,7 +48,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/bullet_weight" />
@@ -82,7 +80,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/ballistic_coefficient" />
@@ -147,7 +144,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/temperature_f1" />
@@ -179,7 +175,6 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/Green"
-                android:text="Button"
                 tools:text="@string/confirm1" />
 
             <Button
@@ -189,7 +184,6 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@android:color/holo_red_dark"
-                android:text="Button"
                 tools:text="@string/back1" />
         </TableRow>
 

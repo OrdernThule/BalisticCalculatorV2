@@ -51,7 +51,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/holo_red_dark"
-            android:text="Button"
             tools:text="@string/back1" />
     </LinearLayout>
 </LinearLayout>

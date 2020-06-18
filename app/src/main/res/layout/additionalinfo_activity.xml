@@ -18,7 +18,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/speed_at_the_target_f_s" />
@@ -44,7 +43,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/speed_of_sound_f_s" />
@@ -70,7 +68,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/flight_time_sec" />
@@ -98,7 +95,6 @@
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:background="@android:color/holo_red_dark"
-            android:text="Button"
             tools:text="@string/back1" />
 
     </LinearLayout>

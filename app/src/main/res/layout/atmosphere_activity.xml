@@ -3,108 +3,112 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/SecondWindow"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@color/grey"
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/FirstAltitude"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:padding="10dp">
 
-        <ImageView
-            android:id="@+id/imageAltitude"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/altitude" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textAltitude"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            tools:text="@string/altitude_feet" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <EditText
-            android:id="@+id/editTAltitude"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/standart"
-            android:inputType="number" />
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageAltitude"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/altitude" />
 
-    <LinearLayout
-        android:id="@+id/SecondTemperature"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textAltitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    tools:text="@string/altitude_feet" />
 
-        <ImageView
-            android:id="@+id/imageTemperature"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/tempforenheit" />
+                <EditText
+                    android:id="@+id/editTAltitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/standart"
+                    android:inputType="number" />
+            </TableRow>
 
-        <TextView
-            android:id="@+id/textTemperature"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            tools:text="@string/temperature_f1" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <EditText
-            android:id="@+id/editTextTemperature"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/standart"
-            android:inputType="number" />
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageTemperature"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/tempforenheit" />
 
-    <LinearLayout
-        android:id="@+id/ThreePressure"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    tools:text="@string/temperature_f1" />
 
-        <ImageView
-            android:id="@+id/imagePressure"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/pressure" />
+                <EditText
+                    android:id="@+id/editTextTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/standart"
+                    android:inputType="number" />
+            </TableRow>
 
-        <TextView
-            android:id="@+id/textPressure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            tools:text="@string/pressure_inches" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-        <EditText
-            android:id="@+id/editTextPressure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/standart"
-            android:inputType="number" />
+                <ImageView
+                    android:id="@+id/imagePressure"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pressure" />
+
+                <TextView
+                    android:id="@+id/textPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    tools:text="@string/pressure_inches" />
+
+                <EditText
+                    android:id="@+id/editTextPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/standart"
+                    android:inputType="number" />
+            </TableRow>
+
+        </TableLayout>
     </LinearLayout>
 
     <TableLayout
@@ -113,7 +117,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/buttonConf"
@@ -122,8 +126,7 @@
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/Green"
-                android:text="Button"
-                tools:text="@string/confirm1" />
+                android:text="@string/confirm1" />
 
             <Button
                 android:id="@+id/buttonBack"
@@ -132,8 +135,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@android:color/holo_red_dark"
-                android:text="Button"
-                tools:text="@string/back1" />
+                android:text="@string/back1" />
         </TableRow>
 
     </TableLayout>

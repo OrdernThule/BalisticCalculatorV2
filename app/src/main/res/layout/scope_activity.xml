@@ -26,7 +26,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="15sp"
             tools:text="@string/sighting_distance_yards" />
@@ -59,7 +58,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/sight_height_inches" />
@@ -85,7 +83,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
             tools:text="@string/vert_click_moa" />
