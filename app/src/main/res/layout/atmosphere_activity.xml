@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/SecondWindow"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
     android:orientation="vertical">
@@ -20,7 +20,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageAltitude"
@@ -50,7 +50,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageTemperature"
@@ -80,7 +80,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imagePressure"
@@ -125,8 +125,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/Green"
-                android:text="@string/confirm1" />
+                android:background="#5FA832"
+                android:text="@string/confirm1"
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
             <Button
                 android:id="@+id/buttonBack"
@@ -134,8 +136,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
-                android:background="@android:color/holo_red_dark"
-                android:text="@string/back1" />
+                android:background="@color/greyred"
+                android:text="@string/back1"
+                android:textSize="18sp"
+                android:textStyle="italic" />
         </TableRow>
 
     </TableLayout>
