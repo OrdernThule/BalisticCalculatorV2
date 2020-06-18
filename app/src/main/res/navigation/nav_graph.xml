@@ -9,7 +9,10 @@
         android:id="@+id/main_layout"
         android:name="com.example.balisticcalculatorv2."
         android:label="main_fragment"
-        tools:layout="@layout/main_layout" >
+        tools:layout="@layout/main_layout"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true"
+        >
         <action
             android:id="@+id/action_main_layout_to_atmosphereActivity"
             app:destination="@id/atmosphereActivity" />
