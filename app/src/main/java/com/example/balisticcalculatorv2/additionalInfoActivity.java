@@ -59,6 +59,6 @@ public class additionalInfoActivity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_additional_info_activity, container, false);
+        return inflater.inflate(R.layout.additionalinfo_activity, container, false);
     }
 }

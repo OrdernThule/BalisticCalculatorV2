@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -63,7 +65,7 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.main_layout, container, false);
+        final View v = inflater.inflate(R.layout.main_layout, container, false);
         final NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
         Button atmoshpereButton = v.findViewById(R.id.buttonAtmosphere);
         atmoshpereButton.setOnClickListener(new View.OnClickListener() {
@@ -73,10 +75,82 @@ public class MainFragment extends Fragment {
 
             }
         });
+        Button buttonRifle = v.findViewById(R.id.buttonRifle);
+        buttonRifle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.rifleActivity);
 
+            }
+        });
+        Button buttonScope = v.findViewById(R.id.buttonScope);
+        buttonScope.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.scopeActivity);
+
+            }
+        });
+        Button buttonCartridge = v.findViewById(R.id.buttonCartridge);
+        buttonCartridge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.cartridgeActivity);
+
+            }
+        });
+        Button buttonAdditionalInfo = v.findViewById(R.id.buttonAdditionalInfo);
+        buttonAdditionalInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.additionalInfoActivity);
+
+            }
+        });
+        Button calculate = v.findViewById(R.id.buttonCalculate);
+        calculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calculateResult(v);
+
+            }
+        });
         return v;
     }
 
+    private void calculateResult(View v) {
+        EditText fieldDistance = v.findViewById(R.id.editTextDistance);
+        System.out.println(fieldDistance.getText());
+        EditText fieldTargetEl = v.findViewById(R.id.editTextNumber2);
+        EditText fieldWindSpeed = v.findViewById(R.id.editTextWindSpeed);
+        EditText fieldWindDirection = v.findViewById(R.id.editTextNumber4);
+        double res = 0;
+        try {
+             res = Double.parseDouble(fieldDistance.getText().toString())
+                    + Double.parseDouble(fieldTargetEl.getText().toString())
+                    + Double.parseDouble(fieldWindSpeed.getText().toString())
+                    + Double.parseDouble(fieldWindDirection.getText().toString());
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        TextView table00 = v.findViewById(R.id.textMOA2);
+        table00.setText(String.valueOf(res));
+        TextView table01 = v.findViewById(R.id.textMOA3);
+        table01.setText(String.valueOf(res));
+        TextView table10 = v.findViewById(R.id.textMRAD3);
+        table10.setText(String.valueOf(res));
+        TextView table11 = v.findViewById(R.id.textMRAD4);
+        table11.setText(String.valueOf(res));
+        TextView table20 = v.findViewById(R.id.textInches2);
+        table20.setText(String.valueOf(res));
+        TextView table21 = v.findViewById(R.id.textInches3);
+        table21.setText(String.valueOf(res));
+        TextView table30 = v.findViewById(R.id.textClicks2);
+        table30.setText(String.valueOf(res));
+        TextView table31 = v.findViewById(R.id.textClicks3);
+        table31.setText(String.valueOf(res));
+    }
 
 
 }

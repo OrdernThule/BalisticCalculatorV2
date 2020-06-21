@@ -66,6 +66,24 @@ public class atmosphereActivity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.atmosphere_activity, container, false);
+        Button buttonConf = v.findViewById(R.id.buttonConf);
+        final NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+        buttonConf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+          //      getActivity().get
+
+            }
+        });
+        Button back = v.findViewById(R.id.buttonBack);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.main_layout);
+
+            }
+        });
         return inflater.inflate(R.layout.atmosphere_activity, container, false);
 
     }
