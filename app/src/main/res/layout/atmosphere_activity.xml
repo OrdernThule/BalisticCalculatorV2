@@ -45,7 +45,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/standart"
-                    android:inputType="number" />
+                    android:inputType="number|numberDecimal" />
             </TableRow>
 
             <TableRow
@@ -75,7 +75,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/standart"
-                    android:inputType="number" />
+                    android:inputType="number|numberDecimal" />
             </TableRow>
 
             <TableRow
@@ -105,7 +105,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="@string/standart"
-                    android:inputType="number" />
+                    android:inputType="number|numberDecimal" />
             </TableRow>
 
         </TableLayout>

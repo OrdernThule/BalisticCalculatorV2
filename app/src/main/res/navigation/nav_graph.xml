@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/main_layout"
-        android:name="com.example.balisticcalculatorv2."
+        android:name="com.example.balisticcalculatorv2.MainFragment"
         android:label="main_fragment"
         tools:layout="@layout/main_layout"
         app:navGraph="@navigation/nav_graph"

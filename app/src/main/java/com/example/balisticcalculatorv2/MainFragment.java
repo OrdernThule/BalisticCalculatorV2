@@ -3,10 +3,14 @@ package com.example.balisticcalculatorv2;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +63,20 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.main_layout, container, false);
+        View v = inflater.inflate(R.layout.main_layout, container, false);
+        final NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+        Button atmoshpereButton = v.findViewById(R.id.buttonAtmosphere);
+        atmoshpereButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.atmosphereActivity);
+
+            }
+        });
+
+        return v;
     }
+
+
+
 }
