@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:shrinkColumns="*"
+        android:stretchColumns="2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/distance" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="@string/sight_d_att"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/scope_dist_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/yard"
+                android:inputType="number|numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/height" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="@string/sight_h_att"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/scope_height_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/inch"
+                android:inputType="number|numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/moa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="@string/v_click_att"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/scope_v_click_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/moa"
+                android:inputType="number|numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/moa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="@string/h_click_att"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/scope_h_click_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/moa"
+                android:inputType="number|numberDecimal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/distance" />
+
+            <Spinner
+                android:id="@+id/scope_unit_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:entries="@array/scope_unit_array" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/scope" />
+
+            <Spinner
+                android:id="@+id/scope_grid_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:entries="@array/scope_grid_array" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/scope_save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5FA832"
+        android:text="@string/save"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

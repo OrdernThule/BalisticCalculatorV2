@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +60,17 @@ public class scopeActivity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.scope_activity, container, false);
+        View v = inflater.inflate(R.layout.scope_fragment, container, false);
+        /*Spinner unitSpinner = v.findViewById(R.id.scope_unit_spinner);
+        ArrayAdapter<CharSequence> untiAdapter = ArrayAdapter.createFromResource(getContext(),
+                R.array.scope_unit_array, android.R.layout.simple_spinner_item);
+        untiAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        unitSpinner.setAdapter(untiAdapter);
+        Spinner gridSpinner = v.findViewById(R.id.scope_grid_spinner);
+        ArrayAdapter<CharSequence> gridAdapter = ArrayAdapter.createFromResource(getContext(),
+                R.array.scope_grid_array, android.R.layout.simple_spinner_item);
+        gridAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        gridSpinner.setAdapter(gridAdapter);*/
+        return v;
     }
 }

@@ -1,52 +1,66 @@
 <resources>
-    <string name="app_name">BalisticCalculatorV2</string>
-    <string name="balistic_calculator">Balistic Calculator</string>
-    <string name="distance_yards">Distance, yards</string>
-    <string name="target_elevation_degrees">Target elevation, deg</string>
-    <string name="wind_speed_mph">Wind speed, mph</string>
-    <string name="wind_direction_degrees">Wind direction, degrees</string>
-    <string name="atmosphere">set Atmosphere</string>
-    <string name="imageDistance">TODO</string>
-    <string name="rifle">set Rifle</string>
-    <string name="shooting_atmosphere">Shooting Atmosphere</string>
-    <string name="cartridge">set Cartridge</string>
-    <string name="vert">Vert.</string>
-    <string name="horiz">Horiz.</string>
-    <string name="moa">MOA</string>
-    <string name="clicks">Clicks</string>
-    <string name="inches">Inches</string>
-    <string name="mrad">MRAD</string>
-    <string name="additional_information1">Additional Information</string>
-    <string name="altitude_feet">Altitude, feet</string>
-    <string name="temperature_f1">Temperature, F</string>
-    <string name="pressure_inches">Pressure, inches</string>
-    <string name="confirm1">Confirm</string>
-    <string name="back1">Back</string>
-    <string name="cartridge_settings">Cartridge Settings</string>
-    <string name="name">Name</string>
-    <string name="bullet_weight">Bullet Weight</string>
-    <string name="ballistic_coefficient">Ballistic coefficient</string>
-    <string name="ballistic_speed_f_s">Ballistic speed, f/s</string>
-    <string name="buttonConfirm">Button</string>
+    <!--UI-->
+    <string name="app_name">Ballistic calculater</string>
+    <string name="save">Save</string>
+    <string name="scope">Scope</string>
+    <string name="atmosphere">Atmosphere</string>
+    <string name="cartridge">Cartridge</string>
     <string name="calculate">Calculate</string>
-    <string name="additional_information">Additional Information</string>
-    <string name="speed_at_the_target_f_s">Speed at the target, f/s:</string>
-    <string name="speed_of_sound_f_s">Speed of sound, f/s:</string>
-    <string name="flight_time_sec">Flight time, sec:</string>
-    <string name="rifle_settings">Rifle Settings</string>
-    <string name="name_of_selected_rifle">Name of selected rifle</string>
-    <string name="scope">set Scope</string>
-    <string name="grid">Grid:</string>
-    <string name="cartridgeset">Cartridge</string>
-    <string name="sighting_distance_yards">Sighting distance, yards</string>
-    <string name="scope_settings">Scope Settings</string>
-    <string name="sight_height_inches">Sight height, inches</string>
-    <string name="vert_click_moa">Vert. click, MOA</string>
-    <string name="standart">0.0</string>
-    <string name="wind_direction_deg">Wind direction, deg</string>
-    <string name="the_name_of_the_current_rifle">The name of the current rifle</string>
-    <string name="horiz_click_moa">Horiz. click, MOA</string>
-    <string name="bullet_speed_f_s">Bullet speed, f/s</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Info</string>
+
+    <!--Measure standards-->
+    <string name="sec">seconds</string>
+    <string name="moa">min per angle</string>
+    <string name="mph">miles per hour</string>
+    <string name="fahrenheit">fahrenheits</string>
+    <string name="feet">feet</string>
+    <string name="inch">inches</string>
+    <string name="yard">yards</string>
+    <string name="degree">degree</string>
+    <string name="feet_per_second">feet per second</string>
+    <string name="click">clicks</string>
+
+    <!--Result table-->
+    <string name="result">Result</string>
+    <string name="mpa">Min per angle</string>
+    <string name="mrad">MRAD</string>
+    <string name="vert">Vert</string>
+    <string name="horiz">Horiz</string>
+
+    <!--Attributes-->
+    <string name="distance_att">Distance</string>
+    <string name="target_elevation_att">Target elevation</string>
+    <string name="wind_speed_att">Wind speed</string>
+    <string name="wind_direction_att">Wind direction</string>
+    <string name="temp_att">Temperature</string>
+    <string name="press_att">Pressure</string>
+    <string name="alt_att">Altitude</string>
+    <string name="v_click_att">Vert click</string>
+    <string name="h_click_att">Horiz click</string>
+    <string name="sight_h_att">Sight height</string>
+    <string name="sight_d_att">Sighting distance</string>
+    <string name="sound_speed_att">Sound speed</string>
+    <string name="target_speed_att">Target speed</string>
+    <string name="bullet_speed_att">Bullet speed</string>
+    <string name="fly_time_att">Fly time</string>
+    <string name="ballistic_coef_att">Ballistic coefficient</string>
+    <string name="bullet_weight_att">Bullet weight</string>
+
+    <!--Preferences-->
+
+    <string name="info_sound_pref">Info Sound speed</string>
+    <string name="info_target_pref">Info Target speed</string>
+    <string name="info_time_pref">Info Fly time</string>
+
+    <string name="atmo_alt_pref">Atmo Altitude</string>
+    <string name="atmo_temp_pref">Atmo Temperature</string>
+    <string name="atmo_press_pref">Atmo Pressure</string>
+
+
+    <string name="cat_rifle_pref">Cat Rifle</string>
+    <string name="cat_weight_pref">Cat Bullet weight</string>
+    <string name="cat_ballistic_pref">Cat Ballistic coefficient</string>
+    <string name="cat_speed_pref">Cat Bullet speed</string>
+    <string name="cat_temp_pref">Cat Temperature</string>
+
 </resources>

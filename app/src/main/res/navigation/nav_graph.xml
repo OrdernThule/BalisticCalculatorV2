@@ -9,7 +9,7 @@
         android:id="@+id/main_layout"
         android:name="com.example.balisticcalculatorv2.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_layout"
+        tools:layout="@layout/main_fragment"
         app:navGraph="@navigation/nav_graph"
         app:defaultNavHost="true"
         >
@@ -34,27 +34,27 @@
         android:id="@+id/atmosphereActivity"
         android:name="com.example.balisticcalculatorv2.atmosphereActivity"
         android:label="fragment_atmosphere_activity"
-        tools:layout="@layout/atmosphere_activity"
+        tools:layout="@layout/atmo_fragment"
         app:navGraph="@navigation/nav_graph"
         app:defaultNavHost="true"/>
     <fragment
         android:id="@+id/additionalInfoActivity"
-        android:name="com.example.balisticcalculatorv2.additionalInfoActivity"
+        android:name="com.example.balisticcalculatorv2.InfoFragment"
         android:label="fragment_additional_info_activity"
-        tools:layout="@layout/additionalinfo_activity" />
+        tools:layout="@layout/info_fragment" />
     <fragment
         android:id="@+id/rifleActivity"
         android:name="com.example.balisticcalculatorv2.rifleActivity"
         android:label="fragment_rifle_activity"
-        tools:layout="@layout/rifle_activity" />
+        tools:layout="@layout/rifle_fragment" />
     <fragment
         android:id="@+id/scopeActivity"
         android:name="com.example.balisticcalculatorv2.scopeActivity"
         android:label="fragment_scope_activity"
-        tools:layout="@layout/scope_activity" />
+        tools:layout="@layout/scope_fragment" />
     <fragment
         android:id="@+id/cartridgeActivity"
-        android:name="com.example.balisticcalculatorv2.CartridgeActivity"
+        android:name="com.example.balisticcalculatorv2.CartridgeFragment"
         android:label="fragment_cartridge_activity"
-        tools:layout="@layout/cartridge_activity" />
+        tools:layout="@layout/cartridge_fragment" />
 </navigation>

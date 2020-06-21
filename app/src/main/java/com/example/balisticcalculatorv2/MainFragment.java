@@ -12,62 +12,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MainFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class MainFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public MainFragment() {
         // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MainFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static MainFragment newInstance(String param1, String param2) {
-        MainFragment fragment = new MainFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View v = inflater.inflate(R.layout.main_layout, container, false);
+        final View v = inflater.inflate(R.layout.main_fragment, container, false);
         final NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-        Button atmoshpereButton = v.findViewById(R.id.buttonAtmosphere);
+        Button atmoshpereButton = v.findViewById(R.id.main_atmo_button);
         atmoshpereButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,15 +33,15 @@ public class MainFragment extends Fragment {
 
             }
         });
-        Button buttonRifle = v.findViewById(R.id.buttonRifle);
+    /*    Button buttonRifle = v.findViewById(R.id.buttonRifle);
         buttonRifle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.rifleActivity);
 
             }
-        });
-        Button buttonScope = v.findViewById(R.id.buttonScope);
+        });*/
+        Button buttonScope = v.findViewById(R.id.main_scope_button);
         buttonScope.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,7 +49,7 @@ public class MainFragment extends Fragment {
 
             }
         });
-        Button buttonCartridge = v.findViewById(R.id.buttonCartridge);
+        Button buttonCartridge = v.findViewById(R.id.main_cat_button);
         buttonCartridge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,7 +57,7 @@ public class MainFragment extends Fragment {
 
             }
         });
-        Button buttonAdditionalInfo = v.findViewById(R.id.buttonAdditionalInfo);
+        Button buttonAdditionalInfo = v.findViewById(R.id.main_info_button);
         buttonAdditionalInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,7 +65,7 @@ public class MainFragment extends Fragment {
 
             }
         });
-        Button calculate = v.findViewById(R.id.buttonCalculate);
+        Button calculate = v.findViewById(R.id.main_calc_button);
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -119,11 +77,11 @@ public class MainFragment extends Fragment {
     }
 
     private void calculateResult(View v) {
-        EditText fieldDistance = v.findViewById(R.id.editTextDistance);
+        EditText fieldDistance = v.findViewById(R.id.main_distance_input);
         System.out.println(fieldDistance.getText());
-        EditText fieldTargetEl = v.findViewById(R.id.editTextNumber2);
-        EditText fieldWindSpeed = v.findViewById(R.id.editTextWindSpeed);
-        EditText fieldWindDirection = v.findViewById(R.id.editTextNumber4);
+        EditText fieldTargetEl = v.findViewById(R.id.main_elevation_input);
+        EditText fieldWindSpeed = v.findViewById(R.id.main_speed_input);
+        EditText fieldWindDirection = v.findViewById(R.id.main_direction_input);
         double res = 0;
         try {
              res = Double.parseDouble(fieldDistance.getText().toString())
@@ -134,21 +92,21 @@ public class MainFragment extends Fragment {
         catch (Exception e){
             e.printStackTrace();
         }
-        TextView table00 = v.findViewById(R.id.textMOA2);
+        TextView table00 = v.findViewById(R.id.main_table_v_mpa_text);
         table00.setText(String.valueOf(res));
-        TextView table01 = v.findViewById(R.id.textMOA3);
+        TextView table01 = v.findViewById(R.id.main_table_h_mpa_text);
         table01.setText(String.valueOf(res));
-        TextView table10 = v.findViewById(R.id.textMRAD3);
+        TextView table10 = v.findViewById(R.id.main_table_v_mrad_text);
         table10.setText(String.valueOf(res));
-        TextView table11 = v.findViewById(R.id.textMRAD4);
+        TextView table11 = v.findViewById(R.id.main_table_h_mrad_text);
         table11.setText(String.valueOf(res));
-        TextView table20 = v.findViewById(R.id.textInches2);
+        TextView table20 = v.findViewById(R.id.main_table_v_inch_text);
         table20.setText(String.valueOf(res));
-        TextView table21 = v.findViewById(R.id.textInches3);
+        TextView table21 = v.findViewById(R.id.main_table_h_inch_text);
         table21.setText(String.valueOf(res));
-        TextView table30 = v.findViewById(R.id.textClicks2);
+        TextView table30 = v.findViewById(R.id.main_table_v_click_text);
         table30.setText(String.valueOf(res));
-        TextView table31 = v.findViewById(R.id.textClicks3);
+        TextView table31 = v.findViewById(R.id.main_table_h_click_text);
         table31.setText(String.valueOf(res));
     }
 

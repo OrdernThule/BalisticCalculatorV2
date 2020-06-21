@@ -1,90 +1,76 @@
 package com.example.balisticcalculatorv2;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link atmosphereActivity#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class atmosphereActivity extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public atmosphereActivity() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment atmosphereActivity.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static atmosphereActivity newInstance(String param1, String param2) {
-        atmosphereActivity fragment = new atmosphereActivity();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-
-
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.atmosphere_activity, container, false);
-        Button buttonConf = v.findViewById(R.id.buttonConf);
-        final NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-        buttonConf.setOnClickListener(new View.OnClickListener() {
+        final View v = inflater.inflate(R.layout.atmo_fragment, container, false);
+        loadData(v);
+        Button saveButton = v.findViewById(R.id.atmo_save_button);
+        saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-          //      getActivity().get
-
+                saveData(v);
+                getActivity().onBackPressed();
             }
         });
-        Button back = v.findViewById(R.id.buttonBack);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.main_layout);
+        return inflater.inflate(R.layout.atmo_fragment, container, false);
 
-            }
-        });
-        return inflater.inflate(R.layout.atmosphere_activity, container, false);
+    }
+    private void loadData(View v){
+        EditText altText = v.findViewById(R.id.atmo_alt_input);
+        EditText tempText = v.findViewById(R.id.atmo_temp_input);
+        EditText pressText = v.findViewById(R.id.atmo_press_input);
+        SharedPreferences sharedPreferences = getActivity().getPreferences(Context.MODE_PRIVATE);
+        int altValue = sharedPreferences.getInt(getString(R.string.atmo_alt_pref), 0);
+        int tempValue = sharedPreferences.getInt(getString(R.string.atmo_temp_pref),0);
+        int pressValue = sharedPreferences.getInt(getString(R.string.atmo_press_pref), 0);
+        altText.setText(String.valueOf(altValue));
+        tempText.setText(String.valueOf(tempValue));
+        pressText.setText(String.valueOf(pressValue));
+    }
 
+    private void saveData(View v){
+        int altValue = 0;
+        int tempValue = 0;
+        int pressValue = 0;
+        EditText altText = v.findViewById(R.id.atmo_alt_input);
+        EditText tempText = v.findViewById(R.id.atmo_temp_input);
+        EditText pressText = v.findViewById(R.id.atmo_press_input);
+        try {
+            altValue = Integer.parseInt(altText.getText().toString());
+            tempValue = Integer.parseInt(tempText.getText().toString());
+            pressValue = Integer.parseInt(pressText.getText().toString());
+        } catch (NumberFormatException e) {
+            Toast.makeText(getContext(), "Failed to parse data", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        SharedPreferences sharedPreferences = getActivity().getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(getString(R.string.atmo_alt_pref), altValue);
+        editor.putInt(getString(R.string.atmo_temp_pref), tempValue);
+        editor.putInt(getString(R.string.atmo_press_pref), pressValue);
+        editor.commit();
     }
 }

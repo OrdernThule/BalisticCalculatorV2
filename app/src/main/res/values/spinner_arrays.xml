@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scope_unit_array">
+        <item>MOA</item>
+        <item>MRAD</item>
+        <item>Inches / 100 yards</item>
+        <item>Centimeters / 100 yards</item>
+    </string-array>
+    <string-array name="scope_grid_array">
+        <item>MilDot(USMC)</item>
+        <item>PSO</item>
+        <item>TMR (Leupold)</item>
+    </string-array>
+    <string-array name="rifle_list_array">
+        <item>Ak</item>
+        <item>M4</item>
+        <item>Mosberg</item>
+    </string-array>
+    <string-array name="catridge_array">
+        <item>Remington 50.</item>
+        <item>Colt 9mm</item>
+        <item>.366</item>
+    </string-array>
+</resources>
