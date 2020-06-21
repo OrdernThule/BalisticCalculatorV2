@@ -29,9 +29,9 @@
                 android:layout_weight="1"
                 android:gravity="center|start"
                 android:maxLines="1"
+                android:text="@string/alt_att"
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"
-                tools:text="@string/alt_att" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/atmo_alt_input"
@@ -59,9 +59,9 @@
                 android:layout_weight="1"
                 android:gravity="center|start"
                 android:maxLines="1"
+                android:text="@string/temp_att"
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"
-                tools:text="@string/temp_att" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/atmo_temp_input"
@@ -89,9 +89,9 @@
                 android:layout_weight="1"
                 android:gravity="center|start"
                 android:maxLines="1"
+                android:text="@string/press_att"
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"
-                tools:text="@string/press_att" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/atmo_press_input"
@@ -109,9 +109,10 @@
         android:id="@+id/atmo_save_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#5FA832"
+        android:background="@color/Green"
         android:text="@string/save"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
 </LinearLayout>

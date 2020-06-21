@@ -3,58 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/main_layout">
+    app:startDestination="@id/main_fragment">
 
     <fragment
-        android:id="@+id/main_layout"
+        android:id="@+id/main_fragment"
         android:name="com.example.balisticcalculatorv2.MainFragment"
-        android:label="main_fragment"
+        android:label="Calculator"
         tools:layout="@layout/main_fragment"
         app:navGraph="@navigation/nav_graph"
         app:defaultNavHost="true"
         >
         <action
-            android:id="@+id/action_main_layout_to_atmosphereActivity"
-            app:destination="@id/atmosphereActivity" />
+            android:id="@+id/action_main_to_atmo"
+            app:destination="@id/atmo_fragment" />
         <action
             android:id="@+id/action_main_layout_to_additionalInfoActivity"
-            app:destination="@id/additionalInfoActivity" />
-        <action
-            android:id="@+id/action_main_layout_to_rifleActivity"
-            app:destination="@id/rifleActivity" />
+            app:destination="@id/info_fragment" />
         <action
             android:id="@+id/action_main_layout_to_scopeActivity"
-            app:destination="@id/scopeActivity" />
+            app:destination="@id/scope_fragment" />
         <action
             android:id="@+id/action_main_layout_to_cartridgeActivity"
-            app:destination="@id/cartridgeActivity" />
+            app:destination="@id/cat_fragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/atmosphereActivity"
-        android:name="com.example.balisticcalculatorv2.atmosphereActivity"
-        android:label="fragment_atmosphere_activity"
-        tools:layout="@layout/atmo_fragment"
-        app:navGraph="@navigation/nav_graph"
-        app:defaultNavHost="true"/>
+        android:id="@+id/atmo_fragment"
+        android:name="com.example.balisticcalculatorv2.AtmoFragment"
+        android:label="Set Atmosphere"
+        tools:layout="@layout/atmo_fragment" />
     <fragment
-        android:id="@+id/additionalInfoActivity"
+        android:id="@+id/info_fragment"
         android:name="com.example.balisticcalculatorv2.InfoFragment"
-        android:label="fragment_additional_info_activity"
+        android:label="Set additional info"
         tools:layout="@layout/info_fragment" />
     <fragment
-        android:id="@+id/rifleActivity"
-        android:name="com.example.balisticcalculatorv2.rifleActivity"
-        android:label="fragment_rifle_activity"
-        tools:layout="@layout/rifle_fragment" />
-    <fragment
-        android:id="@+id/scopeActivity"
-        android:name="com.example.balisticcalculatorv2.scopeActivity"
-        android:label="fragment_scope_activity"
+        android:id="@+id/scope_fragment"
+        android:name="com.example.balisticcalculatorv2.ScopeFragment"
+        android:label="Set Scope"
         tools:layout="@layout/scope_fragment" />
     <fragment
-        android:id="@+id/cartridgeActivity"
+        android:id="@+id/cat_fragment"
         android:name="com.example.balisticcalculatorv2.CartridgeFragment"
-        android:label="fragment_cartridge_activity"
+        android:label="Set Cartridge"
         tools:layout="@layout/cartridge_fragment" />
 </navigation>

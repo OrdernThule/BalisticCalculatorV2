@@ -22,7 +22,6 @@
 
     <!--Result table-->
     <string name="result">Result</string>
-    <string name="mpa">Min per angle</string>
     <string name="mrad">MRAD</string>
     <string name="vert">Vert</string>
     <string name="horiz">Horiz</string>
@@ -62,5 +61,12 @@
     <string name="cat_ballistic_pref">Cat Ballistic coefficient</string>
     <string name="cat_speed_pref">Cat Bullet speed</string>
     <string name="cat_temp_pref">Cat Temperature</string>
+
+    <string name="scope_distance_pref">Scope Distance</string>
+    <string name="scope_height_pref">Scope Height</string>
+    <string name="scope_v_click_pref">Scope Vert Clicks</string>
+    <string name="scope_h_click_pref">Scope Horiz Clicks</string>
+    <string name="scope_unit_pref">Scope Unit</string>
+    <string name="scope_grid_pref">Scope Grid</string>
 
 </resources>

@@ -22,30 +22,21 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         final View v = inflater.inflate(R.layout.main_fragment, container, false);
         final NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-        Button atmoshpereButton = v.findViewById(R.id.main_atmo_button);
-        atmoshpereButton.setOnClickListener(new View.OnClickListener() {
+        Button atmoNavButton = v.findViewById(R.id.main_atmo_button);
+        atmoNavButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.atmosphereActivity);
+                navController.navigate(R.id.atmo_fragment);
 
             }
         });
-    /*    Button buttonRifle = v.findViewById(R.id.buttonRifle);
-        buttonRifle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.rifleActivity);
-
-            }
-        });*/
         Button buttonScope = v.findViewById(R.id.main_scope_button);
         buttonScope.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.scopeActivity);
+                navController.navigate(R.id.scope_fragment);
 
             }
         });
@@ -53,7 +44,7 @@ public class MainFragment extends Fragment {
         buttonCartridge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.cartridgeActivity);
+                navController.navigate(R.id.cat_fragment);
 
             }
         });
@@ -61,7 +52,7 @@ public class MainFragment extends Fragment {
         buttonAdditionalInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.additionalInfoActivity);
+                navController.navigate(R.id.info_fragment);
 
             }
         });

@@ -16,9 +16,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class atmosphereActivity extends Fragment {
+public class AtmoFragment extends Fragment {
 
-    public atmosphereActivity() {
+    public AtmoFragment() {
         // Required empty public constructor
     }
 
@@ -27,12 +27,10 @@ public class atmosphereActivity extends Fragment {
                              Bundle savedInstanceState) {
         final View v = inflater.inflate(R.layout.atmo_fragment, container, false);
         loadData(v);
-        Button saveButton = v.findViewById(R.id.atmo_save_button);
-        saveButton.setOnClickListener(new View.OnClickListener() {
+        v.findViewById(R.id.atmo_save_button).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                saveData(v);
-                getActivity().onBackPressed();
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Test", Toast.LENGTH_SHORT).show();
             }
         });
         return inflater.inflate(R.layout.atmo_fragment, container, false);
