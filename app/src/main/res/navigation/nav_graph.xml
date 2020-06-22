@@ -9,21 +9,20 @@
         android:id="@+id/main_fragment"
         android:name="com.example.balisticcalculatorv2.MainFragment"
         android:label="Calculator"
-        tools:layout="@layout/main_fragment"
-        app:navGraph="@navigation/nav_graph"
         app:defaultNavHost="true"
-        >
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/main_fragment">
         <action
             android:id="@+id/action_main_to_atmo"
             app:destination="@id/atmo_fragment" />
         <action
-            android:id="@+id/action_main_layout_to_additionalInfoActivity"
+            android:id="@+id/action_main_info"
             app:destination="@id/info_fragment" />
         <action
-            android:id="@+id/action_main_layout_to_scopeActivity"
+            android:id="@+id/action_main_to_scope"
             app:destination="@id/scope_fragment" />
         <action
-            android:id="@+id/action_main_layout_to_cartridgeActivity"
+            android:id="@+id/action_main_to_cartridge"
             app:destination="@id/cat_fragment" />
     </fragment>
 

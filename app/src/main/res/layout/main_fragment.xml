@@ -217,17 +217,10 @@
 
             </TableLayout>
 
-            <View
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="?android:attr/listDivider" />
-
             <Button
                 android:id="@+id/main_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:background="@color/Green"
                 android:text="@string/calculate"
                 android:textSize="18sp"
@@ -266,7 +259,7 @@
                             android:background="@color/grey"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="@string/moa"
+                            android:text="@string/short_moa"
                             android:textColor="@android:color/background_dark"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -325,7 +318,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/main_table_v_mpa_text"
+                            android:id="@+id/main_table_v_moa_text"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="2dp"
@@ -390,7 +383,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/main_table_h_mpa_text"
+                            android:id="@+id/main_table_h_moa_text"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="2dp"

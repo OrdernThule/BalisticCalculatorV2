@@ -1,6 +1,6 @@
 <resources>
     <!--UI-->
-    <string name="app_name">Ballistic calculater</string>
+    <string name="app_name">Ballistic calculator</string>
     <string name="save">Save</string>
     <string name="scope">Scope</string>
     <string name="atmosphere">Atmosphere</string>
@@ -10,7 +10,7 @@
 
     <!--Measure standards-->
     <string name="sec">seconds</string>
-    <string name="moa">min per angle</string>
+    <string name="moa">min of angle</string>
     <string name="mph">miles per hour</string>
     <string name="fahrenheit">fahrenheits</string>
     <string name="feet">feet</string>
@@ -22,6 +22,7 @@
 
     <!--Result table-->
     <string name="result">Result</string>
+    <string name="short_moa">MOA</string>
     <string name="mrad">MRAD</string>
     <string name="vert">Vert</string>
     <string name="horiz">Horiz</string>
@@ -46,6 +47,11 @@
     <string name="bullet_weight_att">Bullet weight</string>
 
     <!--Preferences-->
+    <string name="main_distance_pref">Main Distance</string>
+    <string name="main_elevation_pref">Main Elevation</string>
+    <string name="main_speed_pref">Main Speed</string>
+    <string name="main_direction_pref">Main Direction</string>
+    <string name="main_rifle_pref">Main Rifle</string>
 
     <string name="info_sound_pref">Info Sound speed</string>
     <string name="info_target_pref">Info Target speed</string>
@@ -68,5 +74,16 @@
     <string name="scope_h_click_pref">Scope Horiz Clicks</string>
     <string name="scope_unit_pref">Scope Unit</string>
     <string name="scope_grid_pref">Scope Grid</string>
+
+    <!--Table Values-->
+    <string name="table_v_moa">Table V Moa</string>
+    <string name="table_h_moa">Table H Moa</string>
+    <string name="table_v_mrad">Table V Mrad</string>
+    <string name="table_h_mrad">Table H Mrad</string>
+    <string name="table_v_inch">Table V Inch</string>
+    <string name="tabke_h_inch">Table H Inch</string>
+    <string name="table_v_click">Table V Click</string>
+    <string name="table_h_click">Table H Click</string>
+
 
 </resources>

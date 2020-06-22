@@ -3,9 +3,6 @@ package com.example.balisticcalculatorv2;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 public class CartridgeFragment extends Fragment {
 
@@ -36,10 +35,10 @@ public class CartridgeFragment extends Fragment {
         return v;
     }
 
-    private void loadData(View v){
+    private void loadData(View v) {
         SharedPreferences sharedPreferences = getActivity().getPreferences(Context.MODE_PRIVATE);
         int rifleValue = sharedPreferences.getInt(getString(R.string.cat_rifle_pref), 0);
-        int weightValue = sharedPreferences.getInt(getString(R.string.cat_weight_pref),0);
+        int weightValue = sharedPreferences.getInt(getString(R.string.cat_weight_pref), 0);
         int coeffValue = sharedPreferences.getInt(getString(R.string.cat_ballistic_pref), 0);
         int speedValue = sharedPreferences.getInt(getString(R.string.cat_speed_pref), 0);
         int tempValue = sharedPreferences.getInt(getString(R.string.cat_temp_pref), 0);
@@ -55,7 +54,7 @@ public class CartridgeFragment extends Fragment {
         tempText.setText(String.valueOf(tempValue));
     }
 
-    private void saveData(View v){
+    private void saveData(View v) {
         int rifleValue = 0;
         int weightValue = 0;
         int coeffValue = 0;
